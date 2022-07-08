@@ -5,6 +5,8 @@ The packages that usages in this API are:
 * Fast API
 * Uvicorn
 * PyMySQL
+* Flake8
+* Docker-compose
 
 All the details about the packages are present in the requirements.txt file
 
