@@ -1,7 +1,7 @@
 import uvicorn
-from database import cursor, conn
-from app import app
-from models import UserData
+from .database import cursor, conn
+from .app import app
+from .models import UserData
 
 
 @app.get("/")
@@ -66,5 +66,5 @@ def get_user_data(info: UserData):
     }
 
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000, debug=False)
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="127.0.0.1", port=8000, debug=False)
